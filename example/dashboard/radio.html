@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>MC</p>
+    <input id="announcer" type="text">
+    <p>ゲスト</p>
+    <input id="guest" type="text">
+    <button id="update">更新</button>
+</body>
+<script>
+    update.onclick = () => {
+        const anno = document.getElementById("announcer").value;
+        const gues = document.getElementById("guest").value;
+        nodecg.Replicant('announcer').value = anno;
+        nodecg.Replicant('guest').value = gues;
+    }
+</script>
+</html>

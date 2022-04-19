@@ -1,0 +1,30 @@
+{
+    "name": "example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "MIT",
+  
+    "nodecg": {
+      "compatibleRange": "^1.0.0",
+      "dashboardPanels": [
+        {
+          "width": "2",
+          "name": "performer",
+          "title": "出演者",
+          "file": "radio.html"
+        }
+      ],
+      "graphics": [
+        {
+          "file": "radio.html",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    }
+  }
