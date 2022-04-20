@@ -16,7 +16,25 @@
           "width": "2",
           "name": "performer",
           "title": "出演者",
-          "file": "radio.html"
+          "file": "performer.html"
+        },
+        {
+          "width": "2",
+          "name": "corner",
+          "title": "コーナー",
+          "file": "corner.html"
+        },
+        {
+          "width": "2",
+          "name": "main",
+          "title": "メインメッセージ",
+          "file": "main.html"
+        },
+        {
+          "width": "3",
+          "name": "sub",
+          "title": "サブメッセージ",
+          "file": "sub.html"
         }
       ],
       "graphics": [

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        .m{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <input id="message" type="text" class="m">
+    <button id="update">更新</button>
+</body>
+<script>
+    update.onclick = () => {
+        const co = document.getElementById("message").value;
+        nodecg.Replicant('sub').value = co;
+    }
+</script>
+</html>

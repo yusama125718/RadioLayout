@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <input id="corner" type="text">
+    <button id="update">更新</button>
+</body>
+<script>
+    update.onclick = () => {
+        const co = document.getElementById("corner").value;
+        nodecg.Replicant('corner').value = co;
+    }
+</script>
+</html>

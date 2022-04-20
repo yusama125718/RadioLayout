@@ -4,57 +4,74 @@
   <meta charset="UTF-8">
 
   <style>
-    .g{
-      color: white;
-      margin: auto;
-      background: darkslategray;
-      background-size: cover;
-      opacity: 0.5;
-    }
-    .g1{
-      width: 570px;
-      height: 100px;
-      font-size: 100px;
-      position: absolute;
-      left: 1080px;
-      top: 700px;
-    }
-    .g2{
-      width: 570px;
-      height: 100px;
-      font-size: 90vmin;
-      position: absolute;
-      left: 1080px;
-      top: 800px;
-    }
     .a{
-      position: absolute;
-      left: 235px;
-      top: 700px;
-      margin: auto;
-      font-size: 100em;
-      color: white;
-      width: 430px;
-      background: darkslategray;
+      color: skyblue;
+      background: rgba(0, 0, 0, 0.5);
       background-size: cover;
-      opacity: 0.5;
+      position: absolute;
+      left: 240px;
+      top: 700px;
     }
     .a1{
-      font-size: 100px;
+      font-size: 80px;
+      margin: auto;
+      text-align: center;
+      -webkit-text-stroke: 2px black; 
+    }
+    .a2{
+      font-size: 80px;
+      margin: auto;
+      text-align: center;
+      -webkit-text-stroke: 2px black; 
+    }
+    .g{
+      color: skyblue;
       position: absolute;
       left: 1080px;
       top: 700px;
+      background: rgba(0, 0, 0, 0.5);
+      background-size: cover;
     }
-    .a2{
-      font-size: 90vmin;
+    .g1{
+      font-size: 80px;
+      margin: auto;
+      text-align: center;
+      -webkit-text-stroke: 2px black; 
+    }
+    .g2{
+      font-size: 80px;
+      margin: auto;
+      text-align: center;
+      -webkit-text-stroke: 2px black; 
+    }
+    .c{
+      color: black;
+      font-size: 65px;
+    }
+    .m{
       position: absolute;
-      left: 1080px;
-      top: 800px;
-      height: 100px;
+      left: 100px;
+      top: 230px;
+      color: black;
+      width: 1700px;
+      height: 110;
+      font-size: 160px;
+      text-align: center;
+      -webkit-text-stroke: 4px white; 
+    }
+    .s{
+      position: absolute;
+      top: 1020px;
+      height: 60;
+      color: black;
+      -webkit-text-stroke: 1px white; 
+      font-size: 50px;
+      background: rgba(0, 0, 0, 0.5);
     }
   </style>
 </head>
 <body>
+  <div class="c" id="corner"></div>
   <div class="a">
     <div class="a1">メインMC</div>
     <div id="announcer" class="a2"></div>
@@ -63,6 +80,8 @@
     <div class="g1">本日のお相手</div>
     <div id="guest" class="g2"></div>
   </div>
+  <div class="m" id="main"></div>
+  <div class="s" id="sub"></div>
 </body>
 
 <script>
@@ -71,6 +90,15 @@
   });
   nodecg.Replicant('guest').on('change', (newVal) => {
     document.getElementById('guest').textContent = newVal;
+  });
+  nodecg.Replicant('corner').on('change', (newVal) => {
+    document.getElementById('corner').textContent = newVal;
+  });
+  nodecg.Replicant('main').on('change', (newVal) => {
+    document.getElementById('main').textContent = newVal;
+  });
+  nodecg.Replicant('sub').on('change', (newVal) => {
+    document.getElementById('sub').textContent = newVal;
   });
 </script>
 </html>
